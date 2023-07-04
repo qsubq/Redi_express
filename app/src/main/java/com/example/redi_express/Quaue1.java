@@ -16,12 +16,13 @@ public class Quaue1 extends AppCompatActivity {//Первый экран
     }
 //Пропускаем все информационные экраны
     public void skip(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Intent skip = new Intent(this, MainActivity.class);
+        startActivity(skip);
+
     }
 //Переходим к следующему информационному экрану
     public void next(View view) {
-        Intent intent = new Intent(this, Quaue2.class);
-        startActivity(intent);
+        Intent next = new Intent(this, Quaue2.class);
+        startActivity(next);
     }
 }

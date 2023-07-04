@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Quaue3">
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="429dp"
-        android:layout_height="291dp"
+        android:layout_width="400dp"
+        android:layout_height="298dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="111dp"
         android:layout_marginEnd="23dp"
         android:background="@drawable/image3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,16 +34,53 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:layout_width="271dp"
+        android:layout_width="301dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_medium"
         android:gravity="center"
-        android:text="Track your packe"
+        android:text="Track your packeges/items from the comfort of your home till final destination"
         android:textColor="@color/grey"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/signup"
+        android:onClick="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account?"
+        android:textColor="@color/light_grey"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Sign in"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        android:onClick="SignIn"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
